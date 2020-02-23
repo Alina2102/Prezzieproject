@@ -13,9 +13,16 @@ namespace Prezzieproject.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Requests()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Here you can see the requests.";
+
+            return View();
+        }
+
+        public ActionResult Profile()
+        {
+            ViewBag.Message = "Here you can change your profile settings and can manage your requests.";
 
             return View();
         }
