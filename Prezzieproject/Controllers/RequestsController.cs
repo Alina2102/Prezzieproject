@@ -13,14 +13,10 @@ namespace Prezzieproject.Controllers
         public ActionResult Index()
         {
 
-            var requestsList = new List<RequestsModel>
-            {
-                new RequestsModel()
-                { name = "Brezel", country = "Germany", description = "Ich möchte Aufbackbrezeln vom Aldi Süd!", requestDate = DateTime.Now }
-
-            }
-
-            return View();
+            var requestsList = new List<RequestsModel>{
+                new RequestsModel() { name = "Brezel", country = "Germany", description = "Ich möchte Aufbackbrezeln vom Aldi Süd!", requestDate = DateTime.Now }
+            };
+            return View(requestsList);
         }
 
     }
