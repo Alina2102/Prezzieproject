@@ -6,17 +6,11 @@ using System.Web.Mvc;
 
 namespace Prezzieproject.Controllers
 {
-    public class HomeController : Controller
+    public class ProfileController : Controller
     {
+        // GET: Profile
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
