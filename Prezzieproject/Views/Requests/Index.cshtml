@@ -16,6 +16,7 @@
     </tr>
 
 @foreach (var item in Model) {
+    @item.name
     <tr>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
