@@ -19,5 +19,22 @@ namespace Prezzieproject.Controllers
             return View(requestsList);
         }
 
+        public ActionResult Edit(RequestsModel robject)
+        {
+            // open specified request as an edit view
+            return View(robject);
+        }
+
+        public ActionResult Details(RequestsModel robject)
+        {
+            return View(robject);
+        }
+
+        public ActionResult Delete(RequestsModel robject)
+        {
+            // Delete robject in DB...
+            return RedirectToAction("Index");
+        }
+
     }
 }

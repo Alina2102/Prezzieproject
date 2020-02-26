@@ -12,18 +12,25 @@
 </p>
 <table class="table">
     <tr>
-        <th></th>
+        <th>Request</th>
+        <th>Country</th>
+        <th>Date</th>
+        <th>Options</th>
     </tr>
 
-@foreach (var item in Model) {
-    @item.name
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        @item.name
+<tr>
+    <td>@item.name</td>
+    <td>@item.country</td>
+    <td>@item.requestDate.ToShortDateString()</td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", item) |
+        @Html.ActionLink("Details", "Details", new { item }) |
+        @Html.ActionLink("Delete", "Delete", new { item })
+    </td>
+</tr>
+    }
 
 </table>
