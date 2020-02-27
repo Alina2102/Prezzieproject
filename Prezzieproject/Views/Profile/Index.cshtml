@@ -5,10 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+    <h2>Your Profile:</h2>
 
 <div>
-    <h4>Your Profile:</h4>
     <hr />
     <dl class="dl-horizontal">
     </dl>
@@ -23,14 +22,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div>
-                        <img src="http://lorempixel.com/200/200/abstract/1/" alt="No profile picture" class="img-circle img-thumbnail">
+                        <img src="https://ais.badische-zeitung.de/piece/07/14/9b/2e/118790958-h-720.jpg" alt="No profile picture" class="img-circle img-thumbnail">
                         <h2>Peter Lustig</h2>
                         <p>
-                            Das hier ist die Beachreibung eines Profils, hier allerdings nur fest reingeschrieben.
-                            blablaaaaaaaaaa
-                            lbuuuuuubl
+                            Das hier ist die Beschreibung eines Profils, hier allerdings nur fest reingeschrieben.
+                            Peter Lustig war echt 1 nicer guy, der eindutig zu früh awaygepassed ist. I dont know man but i dont like that!
                         </p>
-       
+                        <p><a class="btn btn-default" style="background-color:#ffffff" @Html.ActionLink("If you click here, you can see your requests!", "OwnRequests", "Profile")</a></p>
+
                     </div>
                 </div>
             </div>
@@ -39,7 +38,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <form role="form">
-                        <h2>Edit your profile.</h2>
+                        <h2>Edit your profile:</h2>
                         <hr class="colorgraph">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
@@ -79,25 +78,8 @@
                     </form>
                 </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Hier kann Text stehen.</p>
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
         </div>
     </div>
 </div>
+            
 

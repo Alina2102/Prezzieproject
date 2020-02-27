@@ -11,8 +11,18 @@ namespace Prezzieproject.Controllers
     {
         // GET: Profile
         public ActionResult Index()
-        {
+        { 
             return View();
         }
+
+        // GET: OwnRequests
+        public ActionResult OwnRequests()
+        {
+            var requestsList = new List<RequestsModel>{
+                new RequestsModel() { name = "Brezel", country = "Germany", description = "Ich möchte Aufbackbrezeln vom Aldi Süd!", requestDate = DateTime.Now }
+            };
+            return View(requestsList);
+        }
+
     }
 }
