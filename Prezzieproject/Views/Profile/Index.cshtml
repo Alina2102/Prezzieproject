@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <h2>Your Profile:</h2>
+    <h2>Your Profile:<p align="right"><a class="btn btn-default" style="background-color:#56c8c8" @Html.ActionLink("My own requests", "OwnRequests", "Profile")</a></p></h2>
 
 <div>
     <hr />
@@ -25,11 +25,9 @@
                         <img src="https://ais.badische-zeitung.de/piece/07/14/9b/2e/118790958-h-720.jpg" alt="No profile picture" class="img-circle img-thumbnail">
                         <h2>Peter Lustig</h2>
                         <p>
-                            Das hier ist die Beschreibung eines Profils, hier allerdings nur fest reingeschrieben.
-                            Peter Lustig war echt 1 nicer guy, der eindutig zu früh awaygepassed ist. I dont know man but i dont like that!
+                            Here you can see the profile description............................................................................
                         </p>
-                        <p><a class="btn btn-default" style="background-color:#56c8c8" @Html.ActionLink("If you click here, you can see your requests!", "OwnRequests", "Profile")</a></p>
-
+                       
                     </div>
                 </div>
             </div>
@@ -68,7 +66,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="description" id="description" class="form-control input-lg" placeholder="Description" tabindex="1">
+                            <textarea type="text" name="description" id="description" class="form-control input-lg" rows="5" placeholder="Description" tabindex="1"></textarea>
                         </div>
                         <hr class="colorgraph">
                         <div class="row">
