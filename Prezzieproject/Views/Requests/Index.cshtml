@@ -20,13 +20,12 @@
 
     @foreach (var item in Model)
     {
-        @item.name
 <tr>
-    <td>@item.name</td>
-    <td>@item.country</td>
+    <td>@item.userName</td>
+    <td>@item.countrySouv</td>
     <td>@item.requestDate.ToShortDateString()</td>
     <td>
-        @Html.ActionLink("Edit", "Edit", item) |
+        @Html.ActionLink("Edit", "Edit", new { item }) |
         @Html.ActionLink("Details", "Details", new { item }) |
         @Html.ActionLink("Delete", "Delete", new { item })
     </td>
