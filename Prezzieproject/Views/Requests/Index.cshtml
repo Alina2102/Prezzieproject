@@ -5,37 +5,42 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Requests</h2>
+
+    <h2>Requests<form class="form-inline my-2 my-lg-0" align="right">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </h2>
 
 <p>
     <a class="btn btn-default" style="background-color:#feab33" @Html.ActionLink("Create New", "Create")</a>
 </p>
 
-    @foreach (var item in Model)
-    { <div class="jumbotron">
-          <table class="table">
-              <tr>
-                  <td>Souvenir:</td>
-                  <td>@item.souvenirName</td>
-              </tr>
-              <tr>
-                  <td>Country:</td>
-                  <td>@item.countrySouv</td>
-              </tr>
-              <tr>
-                  <td>Description:</td>
-                  <td>@item.descriptionSouv</td>
-              </tr>
-              <tr>
-                  <td>Request Date:</td>
-                  <td>@item.requestDate.ToShortDateString()</td>
-              </tr>
-              <tr>
-                  <td>
-                     <a class="btn btn-default" style="background-color:#56c8c8" @Html.ActionLink("Details", "Details", new { item })
-                  </td>
-              </tr>
-          </table>
-         </div>}
+@foreach (var item in Model)
+{<div class="jumbotron">
+        <table class="table">
+            <tr>
+                <td>Souvenir:</td>
+                <td>@item.souvenirName</td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>@item.countrySouv</td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td>@item.descriptionSouv</td>
+            </tr>
+            <tr>
+                <td>Request Date:</td>
+                <td>@item.requestDate.ToShortDateString()</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="btn btn-default" style="background-color:#56c8c8" @Html.ActionLink("Details", "Details", new { item })
+                </td>
+            </tr>
+        </table>
+    </div>}
 
 
