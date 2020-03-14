@@ -1,0 +1,15 @@
+﻿================================================ PrezzieContext ================================================
+
+Enable-Migrations -ContextTypeName PrezzieContext -MigrationsDirectory Migrations\Prezzie
+
+add-migration -ConfigurationTypeName Prezzieproject.Migrations.Prezzie.Configuration "Initial Create"
+
+update-database -ConfigurationTypeName Prezzieproject.Migrations.Prezzie.Configuration
+
+================================================ ApplicationDbContext ================================================
+
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Identity
+
+add-migration -ConfigurationTypeName Prezzieproject.Migrations.Identity.Configuration "Initial Create"
+
+update-database -ConfigurationTypeName Prezzieproject.Migrations.Identity.Configuration
