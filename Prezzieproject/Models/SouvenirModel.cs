@@ -13,7 +13,7 @@ namespace Prezzieproject.Models
         public string descriptionSouv { get; set; }
 
         // Relation to Request 
-        public virtual RequestsModel request { get; set }
+        public virtual RequestsModel request { get; set; }
         public string username { get; set; }
 
 
